@@ -1,0 +1,195 @@
+body
+{
+	background-color: #F3F7F7;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav /*Fond de la barre de nav */
+{
+	width: 100%;
+	background-color: #9E9B9E;
+	min-height: 60px;
+	box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.8),
+				0px 0px 0px rgba(0, 0, 0, 0) inset,
+				0px 5px 0px 1px rgba(0,0,0,0.1) inset;
+	border-radius: 0px 0px 5px 5px;
+}
+
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li /* Disparition de l'effet de style des listes*/
+{
+ list-style-type: none;
+}
+
+nav > ul > li /* Position des titres menus*/
+{
+	float: left;
+	position: relative;
+}
+
+nav > ul > li:hover /* Case blanche quand la souris passe sur un Titre nav*/
+{
+	background: rgba(255,255,255,0.1);
+	border-bottom: 3px solid rgba(255,255,255,0.8);
+}
+
+nav > ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav > ul > li > a
+{
+	width: 18vw;
+	min-width: 150px;
+}
+
+.submenu /*Rendre invisible les sous menus */
+{
+	display: none;
+}
+
+nav a /* Modification de tout les liens de la barre nav*/
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a /*Modification de la couleur des titres menu*/
+{
+	padding: 20px 30px;
+	color: rgb(255,255,255);
+	font-size: 1.5vw;
+	text-transform: uppercase;
+}
+
+nav li:hover .submenu /*Modification de la position des sous-menu*/
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li a /* Style des sous-menus */
+{
+ 	padding: 0.8vw 0.8vw;
+ 	font-size: 1.2vw;
+ 	color: rgb(255,255,255);
+}
+
+.submenu
+{
+	width: 30.1vw;
+}
+
+.submenu
+{
+		/*Arrière plan des sous-menus */
+
+	background-color: #9E9B9E;
+	box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.8),
+				0px 0px 0px rgba(0, 0, 0, 0) inset,
+				0px 5px 0px 1px rgba(0,0,0,0.1) inset;
+	border-radius: 0px 0px 5px 5px;
+	transition: 1s;
+}
+
+nav > ul > div > #logo /* Placement Image + Lien */
+{
+	float: right;
+	margin-right: 150px;
+}
+
+img /* Redimenssion de l'image */
+{
+	width: 8.5vw;
+	min-height: 60px;
+	min-width: 150px;
+}
+
+#login
+{
+	float: right;
+	margin-right: 150px;
+	min-height: 10px;
+	min-width: 150px;
+	display: flex;
+	width: 8.5vw;
+	height: 5vw;
+	justify-content: center;
+	justify-content: space-around;
+	line-height: 2.5vw;
+	flex-wrap: wrap;
+	letter-spacing: 3px;
+	background-color: #9E9B9E;
+	box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.8),
+				0px 0px 0px rgba(0, 0, 0, 0) inset,
+				0px 5px 0px 1px rgba(0,0,0,0.1) inset;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#login a
+{
+	font-size: 1.1vw;
+	color: white;
+	text-decoration: none;
+
+}
+
+h2
+{
+	color: black;
+	font-size: 1.2vw;
+	text-align: left;
+	width: 65vw;
+	justify-content: center;
+	margin: auto;
+	line-height: 1.3vw;
+}
+
+h4
+{
+	color: black;
+	font-size: 1vw;
+	text-align: left;
+	width: 65vw;
+	justify-content: center;
+	margin: auto;
+	line-height: 1.3vw;
+}
+
+p
+{
+	color: black;
+	font-size: 1vw;
+	text-align: left;
+	width: 65vw;
+	justify-content: center;
+	margin: auto;
+	line-height: 1.3vw;
+}
+
+.produit
+{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 88%;
+}
+
+.image_produit
+{
+	margin-left: 10%;
+	margin-right: 5%;
+}
